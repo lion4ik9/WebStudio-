@@ -118,3 +118,7 @@ footer {
 ul {
     display: flex;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
