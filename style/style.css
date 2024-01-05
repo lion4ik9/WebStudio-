@@ -7,6 +7,12 @@
 }
 
 @font-face {
+    font-family: 'Raleway';
+    font-weight: 700;
+    src: url('Shrifts\Roboto-Regular.ttf');
+}
+
+@font-face {
     font-family: 'Roboto';
     font-weight: 400;
     src: url('Shrifts\Roboto-Regular.ttf');
