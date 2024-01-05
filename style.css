@@ -9,25 +9,25 @@
 @font-face {
     font-family: 'Roboto';
     font-weight: 400;
-    src: url('Srifts\Roboto-Regular.ttf');
+    src: url('Shrifts\Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Roboto';
     font-weight: 500;
-    src: url('Srifts\Roboto-Medium.ttf');
+    src: url('Shrifts\Roboto-Medium.ttf');
 }
 
 @font-face {
     font-family: 'Roboto';
     font-weight: 700;
-    src: url('Srifts\Roboto-Bold.ttf');
+    src: url('Shrifts\Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Roboto';
     font-weight: 900;
-    src: url('Srifts\Roboto-Black.ttf');
+    src: url('Shrifts\Roboto-Black.ttf');
 }
 
 
