@@ -6,14 +6,12 @@
     --color-grey: #757575;
 }
 
-@font-face {
-    font-family: 'Raleway';
-    font-weight: 700;
-    src: url('Shrifts\Roboto-Regular.ttf');
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-weight: 400;
     src: url('Shrifts\Roboto-Regular.ttf');
 }
@@ -37,23 +35,14 @@
 }
 
 
-nav {
+.navigation {
     width: 1600px;
     height: 80px;
 }
 
-nav ul {
+.navigation ul {
     display: flex;
-}
-
-#section1 {
-    background-color: #2F303A;
-    top: 80px;
-
-}
-
-.tableHead {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -61,8 +50,65 @@ nav ul {
     text-align: left;
 }
 
-#section4 {
+.section1 {
+    background-color: #2F303A;
+    padding: 200px;
+}
+
+section {
+    display: block;
+}
+
+.main-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    display: flex;
+    
+}
+
+.ul-navigation {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.section4 {
     background-color: #F5F4FA;
+}
+
+.main-list {
+    margin: 94px 0 94px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.mail-item h3 {
+    font-weight: 700;
+    color: rgba(33, 33, 33, 1);
+    text-transform: uppercase;
+    font-size: 16px;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 14;
+    line-height: 1.1;
+    padding-left: 10%;
+    padding-right: 140px;
+}
+
+.mail-item p {
+    color: rgba(117, 117, 117, 1);
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 button {
@@ -74,14 +120,16 @@ button {
     border-radius: 4px;
     background-color: #2196F3;
     border-color: #2196F3;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    justify-content: center;
 }
 
 h1 {
     color: white;
-}
-
-.zagolovki {
-    font-size: 16px;
 }
 
 td {
@@ -91,16 +139,20 @@ td {
     text-align: center;
 }
 
-.rightTable {
-    text-align: right;
-}
-
 h4 {
     font-size: 15px;
 }
 
 .h4Descrip {
     color: grey;
+}
+
+.footMailLink {
+    color: white;
+}
+
+.footTelLink {
+    color: white;
 }
 
 .footImg {
@@ -115,16 +167,64 @@ figure {
     background-color: white;
 }
 
-
-
 footer {
     background-color: #2F303A;
 }
 
 ul {
     display: flex;
+    list-style: none;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    font-family: 'Oleo Script', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.container {
+    width: 1720px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+div {
+    display: block;
+}
+
+.li-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.ul-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.second-title {
+    text-align: center;
+}
+
+ul .wdwd {
+    display: flex;
+    justify-content: space-around;
 }
