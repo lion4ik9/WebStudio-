@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('Shrifts\Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('Shrifts\Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 900;
+    src: url('Shrifts\Roboto-Black.ttf');
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-li {
+    padding: 13px;
+}
+
+.header-ul {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalogs-li {
+    padding: 5px;
+}
+
+.catalogs-ul {
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog-buttons {
+    background: #F5F4FA;
+    border: 2px solid #F5F4FA;
+    border-radius: 4px;
+}
+
+.catalog-buttons:hover {
+    border: 2px solid #2196F3;
+}
+
+.catalog-buttons:visited {
+    border: 2px solid #2196F3;
+    background-color: #2196F3;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 2px solid #EEEEEE;
+}
+
+.fig-container {
+    padding: 20px;
+}
