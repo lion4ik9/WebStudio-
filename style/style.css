@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Roboto';
     font-weight: 400;
     src: url('Shrifts\Roboto-Regular.ttf');
 }
@@ -46,7 +46,6 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    letter-spacing: 0.02em;
     text-align: left;
 }
 
@@ -63,11 +62,12 @@ section {
     font-family: 'Roboto', sans-serif;
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.3px;
-    letter-spacing: 0.06em;
+    line-height: 1.3;
     text-align: center;
     display: flex;
-    
+    width: 740px;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .ul-navigation {
@@ -75,7 +75,6 @@ section {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    letter-spacing: 0.02em;
     text-align: left;
 }
 
@@ -97,11 +96,8 @@ section {
     text-transform: uppercase;
     font-size: 16px;
     list-style: none;
-    justify-content: space-around;
-    font-size: 14;
+    text-align: center;
     line-height: 1.1;
-    padding-left: 10%;
-    padding-right: 140px;
 }
 
 .mail-item p {
@@ -109,14 +105,66 @@ section {
     list-style: none;
     font-size: 14px;
     line-height: 1.7;
+    width: 270px;
+    text-align: left;
+}
+
+
+
+
+#one::before {
+    content: url('../images/antenna\ 1.png');
+    background-color: #F5F4FA;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F4FA;
+    border-radius: 6px;
+}
+
+#two::before {
+    content: url('../images/clock\ 1.png');
+    background-color: #F5F4FA;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F4FA;
+    border-radius: 6px;
+}
+
+#three::before {
+    content: url('../images/diagram\ 1.png');
+    background-color: #F5F4FA;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F4FA;
+    border-radius: 6px;
+}
+
+#four::before {
+    content: url('../images/astronaut\ 1.png');
+    background-color: #F5F4FA;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F5F4FA;
+    border-radius: 6px;
+}
+
+.mail-img {
+
 }
 
 button {
     color: #FFFFFF;
     width: 216px;
     height: 50px;
-    top: 430px;
-    left: 692px;
+    display: flex;
     border-radius: 4px;
     background-color: #2196F3;
     border-color: #2196F3;
@@ -124,8 +172,10 @@ button {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    letter-spacing: 0.06em;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 h1 {
@@ -169,6 +219,40 @@ figure {
 
 footer {
     background-color: #2F303A;
+    height: 252px;
+}
+
+.street-foot {
+    color: #EEEEEE;
+}
+
+.mail-foot,
+.phone-foot {
+    color: #FFFFFF99;
+    opacity: 60%;
+}
+
+.mail-foot-link,
+.phone-foot-link {
+    text-decoration: none;
+    color: #FFFFFF99;
+    opacity: 60%;
+}
+
+.ne-container {
+    padding-left: 180px;
+    padding-top: 60px;
+}
+
+.footer-logo {
+    font-size: 26px;
+    color: #EEEEEE;
+}
+
+.info-list-foot {
+    flex-direction: column;
+    padding: 0;
+    line-height: 1.7;
 }
 
 ul {
@@ -185,14 +269,11 @@ body {
     font-size: 26px;
     font-weight: 700;
     line-height: 31px;
-    letter-spacing: 0.03em;
     text-align: left;
-
     font-family: 'Oleo Script', sans-serif;
     font-size: 26px;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: 0.03em;
     text-align: left;
 }
 
@@ -224,7 +305,37 @@ div {
     text-align: center;
 }
 
-ul .wdwd {
+.wdwd {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.descrip-ot {
+    color: #757575;
+    font-weight: 400;
+}
+
+.mail-list {
+    justify-content: center;
+}
+
+.wdwd-img {
+    padding-right: 20px;
+}
+
+.wdwd-img:not(:last-child) {
+    padding-right: 20px;
+}
+
+.figure-ot {
+    margin: 14px;
+}
+
+.figurecaption {
+    box-shadow: 0px 4px 25px 0.05px rgba(0, 0, 0, 0.5);
+}
+
+.ot {
+    display: flex;
+    justify-content: center;
 }

@@ -11,62 +11,58 @@
 <body>
   <main>
     <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <div class="logo">WebStudio</div>
-          <ul class="ul-navigation">
-            <li class="li-navigation"><a href="#">Студія</a></li>
-            <li class="li-navigation"><a href="portfolio.html">Портфоліо</a></li>
-            <li class="li-navigation"><a href="#">Контакти</a></li>
-            <li class="li-navigation"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="li-navigation"><a href="tel:+380961111111">+380 96 111 11 11</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navigation">
+        <div class="logo">WebStudio</div>
+        <ul class="ul-navigation">
+          <li class="li-navigation"><a href="#">Студія</a></li>
+          <li class="li-navigation"><a href="portfolio.html">Портфоліо</a></li>
+          <li class="li-navigation"><a href="#">Контакти</a></li>
+          <li class="li-navigation"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="li-navigation"><a href="tel:+380961111111">+380 96 111 11 11</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="container">
-      <section class="section1">
-        <h1 class="main-title">ЕФЕКТИВНЕ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="button">Замовити послугу</button>
-      </section>
-    </div>
+
+    <section class="section1">
+      <h1 class="main-title">ЕФЕКТИВНЕ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+      <button type="button" class="button">Замовити послугу</button>
+    </section>
+
     <section class="section2">
       <ul class="mail-list">
         <li class="mail-item">
-          <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+          <figure class="mail-fig" id="one">
+            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+          </figure>
         </li>
         <li class="mail-item">
-          <h3>ПУНКТУАЛЬНІСТЬ</h3>
+          <figure class="mail-fig" id="two">
+            <h3>ПУНКТУАЛЬНІСТЬ</h3>
+            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>
+          </figure>
         </li>
         <li class="mail-item">
-          <h3>планування</h3>
+          <figure class="mail-fig" id="three">
+            <h3>планування</h3>
+            <p>Так само консультація з широким активом значною мірою зумовлює. </p>
+          </figure>
         </li>
         <li class="mail-item">
-          <h3>СУЧАснІ ТЕХНОЛОГІЇ</h3>
-        </li>
-      </ul>
-      <ul class="mail-list">
-        <li class="mail-item">
-          <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-        </li>
-        <li class="mail-item">
-          <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>
-        </li>
-        <li class="mail-item">
-          <p>Так само консультація з широким активом значною мірою зумовлює. </p>
-        </li>
-        <li class="mail-item">
-          <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+          <figure class="mail-fig" id="four">
+            <h3>СУЧАснІ ТЕХНОЛОГІЇ</h3>
+            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+          </figure>
         </li>
       </ul>
       <section class="section3">
         <br>
         <h3 class="second-title">ЧИМ ЗАЙМАЄМОСЯ</h3>
         <ul class="wdwd">
-          <li class="li-wdwd"><img src="images/box 1.jpg"></li>
-          <li class="li-wdwd"><img src="images/box 2.jpg"></li>
-          <li class="li-wdwd"><img src="images/box 3.jpg"></li>
+          <li class="li-wdwd"><img class="wdwd-img" src="images/box 1.jpg"></li>
+          <li class="li-wdwd"><img class="wdwd-img" src="images/box 2.jpg"></li>
+          <li class="li-wdwd"><img class="wdwd-img" src="images/box 3.jpg"></li>
         </ul>
         </center>
       </section>
@@ -117,12 +113,26 @@
         </center>
       </section>
       <footer class="footer">
-        <br>
-        <img class="footImg" src="images/WebStudio1.png">
-        <br>
-        <h4 class="footInfo" style="color: aliceblue;">м. Київ, пр-т Лесі Українки, 26</h4>
-        <h4 class="footMail"><a class="footMailLink" href="mailto:info@devstudio.com">info@devstudio.com</a></h4>
-        <h4 class="footTel"><a class="footTelLink" href="tel:+380961111111">+380 96 111 11 11</a></h4>
+        <div class="ne-container">
+          <div class="footer-logo">
+            WebStudio
+          </div>
+          <ul class="info-list-foot">
+            <li class="street-foot">
+              м. Київ, пр-т Лесі Українки, 26
+            </li>
+            <li class="mail-foot">
+              <a href="info@example.com" class="mail-foot-link">
+                info@example.com
+              </a>
+            </li>
+            <li class="phone-foot">
+              <a href="+38 096 111 11 11" class="phone-foot-link">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+
       </footer>
       </div>
   </main>

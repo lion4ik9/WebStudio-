@@ -1,5 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('Shrifts\Roboto-Regular.ttf');
 }
 
 @font-face {
@@ -29,6 +36,11 @@ ul {
     padding: 13px;
 }
 
+.header-link {
+    text-decoration: none;
+}
+
+
 .header-ul {
     align-items: center;
     justify-content: space-between;
@@ -51,16 +63,22 @@ ul {
 
 .catalog-buttons:hover {
     border: 2px solid #2196F3;
+    cursor: pointer;
 }
 
-.catalog-buttons:visited {
+
+
+.catalog-buttons:checked {
     border: 2px solid #2196F3;
     background-color: #2196F3;
 }
 
 .product-list {
+    justify-content: center;
+    flex-basis: calc((100% - 120)/3);
     display: flex;
     flex-wrap: wrap;
+    gap: 60px;
 }
 
 .product {
@@ -69,4 +87,64 @@ ul {
 
 .fig-container {
     padding: 20px;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.fig-product {
+    margin: 0;
+}
+
+.info-list-foot {
+    flex-direction: column;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.fig-title {
+    font-weight: 700;
+}
+
+.fig-descrip {
+    font-weight: 400;
+    color: #757575;
+}
+
+footer {
+    background-color: #2F303A;
+    height: 252px;
+}
+
+.street-foot {
+    color: #EEEEEE;
+}
+
+.mail-foot,
+.phone-foot {
+    color: #FFFFFF99;
+    opacity: 60%;
+    letter-spacing: 3%;
+}
+
+.mail-foot-link,
+.phone-foot-link {
+    text-decoration: none;
+    color: #FFFFFF99;
+    opacity: 60%;
+}
+
+.ne-container {
+    padding-left: 180px;
+    padding-top: 60px;
+}
+
+.footer-logo {
+    font-size: 26px;
+    color: #EEEEEE;
+}
+
+.logo {
+    font-size: 26px;
 }
