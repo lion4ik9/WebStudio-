@@ -75,7 +75,6 @@ ul {
 
 .product-list {
     justify-content: center;
-    flex-basis: calc((100% - 120)/3);
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
@@ -83,6 +82,7 @@ ul {
 
 .product {
     border: 2px solid #EEEEEE;
+    flex-basis: calc((100% - 120)/3);
 }
 
 .fig-container {
