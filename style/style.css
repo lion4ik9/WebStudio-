@@ -56,6 +56,10 @@ src: url('Shrifts\Raleway-Bold.ttf');
   text-align: left;
 }
 
+.li-ot {
+  width: 270px;
+}
+
 .li-link {
   text-decoration: none;
   color: black;
@@ -397,6 +401,10 @@ div {
   height: 294px;
 }
 
+.img-ot {
+  width: 100%;
+}
+
 .figure-ot {
   height: 0 auto;
   margin: 0;
@@ -409,5 +417,5 @@ div {
 
 .ot {
   justify-content: space-between;
-  gap: 30px;
+  padding: 0;
 }
