@@ -66,7 +66,11 @@ src: url('Shrifts\Raleway-Bold.ttf');
 }
 
 .section1 {
-  background-color: #2F303A;
+  align-self: center;
+  background-image: url('../images/mainImg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px 600px;
   padding: 200px 0;
   justify-content: center;
 }
