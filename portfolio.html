@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/portfolio.css">
+    <link rel="stylesheet" href="images/icon/style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
@@ -16,29 +17,33 @@
 
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <nav class="navigation">
-                <ul class="header-ul">
-                    <li class="header-li">
+                <ul class="ul-navigation">
+                    <li class="li-navigation">
                         <div class="logo">
                             <div class="logo1">Web</div>
                             <div class="logo2">Studio</div>
                         </div>
                     </li>
-                    <li class="header-li"><a class="header-link" href="webstudio.html">Студія</a></li>
-                    <li class="header-li"><a class="header-link" href="#">Портфоліо</a></li>
-                    <li class="header-li"><a class="header-link" href="#">Контакти</a></li>
-                    <li class="header-li"><a class="header-link" href="#">info@devstudio.com</a></li>
-                    <li class="header-li"><a class="header-link" href="#">+38 096 111 11 11</a></li>
+                    <li class="li-navigation"><a class="li-link" href="index.html">Студія</a></li>
+                    <li class="li-navigation"><a class="li-link" href="#">Портфоліо</a></li>
+                    <li class="li-navigation"><a class="li-link" href="#">Контакти</a></li>
+                    <li class="li-navigation"><a class="li-link" href="mailto:info@devstudio.com"><i
+                                class="icon-envelope-hover"></i>info@devstudio.com</a></li>
+                    <li class="li-navigation"><a class="li-link" href="tel:+380961111111"><i
+                                class="icon-smartphone"></i>+380 96
+                            111 11 11</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <main>
     <div class="container">
         <ul class="catalogs-ul">
             <li class="catalogs-li"><button class="catalog-buttons">Усі</button></li>
-            <li class="catalogs-li"><button class="catalog-buttons">Веб Сайти</button></li>
+            <li class="catalogs-li"><button class="catalog-buttons">Веб-cайти</button></li>
             <li class="catalogs-li"><button class="catalog-buttons">Додатки</button></li>
             <li class="catalogs-li"><button class="catalog-buttons">Дизайн</button></li>
             <li class="catalogs-li"><button class="catalog-buttons">Маркетинг</button></li>
@@ -47,6 +52,7 @@
             <li class="product">
                 <figure class="fig-product">
                     <img class="img-ot" src="images/1.png">
+                    <p></p>
                     <figrecaption>
                         <div class="fig-container">
                             <div class="fig-title">
@@ -181,9 +187,12 @@
             </li>
         </ul>
     </div>
+</main>
     <footer>
         <div class="container">
             <ul class="info-list-foot">
+                <li>
+                    <ul class="info-list-foot1">
                 <li>
                     <div class="footer-logo">
                         <div class="footer-logo1">Web</div>
@@ -203,6 +212,17 @@
                         +38 096 111 11 11
                     </a>
                 </li>
+            </ul>
+            </li>
+                <li>
+                    <h6 class="foot-h6">ПРИЄДНУЙТЕСЬ</h6>
+                    <ul class="socials">
+                      <li class="li-socials"><a href="" class="a-socials"><i class="icon-instagram-2"></i></a></li>
+                      <li class="li-socials"><a href="" class="a-socials"><i class="icon-twitter-1"></i></a></li>
+                      <li class="li-socials"><a href="" class="a-socials"><i class="icon-facebook-1"></i></a></li>
+                      <li class="li-socials"><a href="" class="a-socials"><i class="icon-linkedin-1"></i></a></li>
+                    </ul>
+                  </li>
             </ul>
         </div>
     </footer>
