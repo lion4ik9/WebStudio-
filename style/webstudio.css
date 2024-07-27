@@ -40,7 +40,6 @@ body {
     src: url('Shrifts\Roboto-Black.ttf');
 }
 
-
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -77,6 +76,7 @@ body {
 }
 
 
+
 #li-link_active > .li-link::after {
     content: "";
     width: 100%;
@@ -93,6 +93,14 @@ body {
 #li-link_active > .li-link:hover::after {
     background-color: #2196F3;
     transform: scale3d(1,1,1);
+}
+
+.li-link-hover::after {
+    transform-origin: 100% 50%;
+}
+
+.li-link-hover:hover::after {
+    transform-origin: 0 50%;
 }
 
 .section1 {
@@ -507,15 +515,37 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #AFB1B8;
 }
 
 .regular-clients-link:hover {
-    outline: 1px solid #2196F3;
+    animation: bubik 340ms cubic-bezier(0.4, 0, 0.2, 1) 0s alternate both;
 }
 
-.regular-clients-link:hover .regular-clients-svg {
-    fill: #2196F3;
+@keyframes bubik {
+    0% {
+        border: 1px solid #AFB1B8;
+    }
+
+    100% {
+        border: 1px solid #2196F3;
+    }
 }
+
+.regular-clients-svg:hover {
+    animation: cubic 340ms cubic-bezier(0.4, 0, 0.2, 1) alternate both;
+}
+
+@keyframes cubic {
+    0% {
+        fill: #AFB1B8;
+    }
+
+    100% {
+        fill: #2196F3;
+    }
+}
+
 
 .h2-sec5 {
     align-self: center;
@@ -534,7 +564,6 @@ div {
 .regular-clients-item {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
     margin-right: 30px;
 }
 
