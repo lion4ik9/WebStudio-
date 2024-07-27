@@ -10,11 +10,12 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="images/icon/style.css">
+
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
+    <div id="header_container" class="container">
       <nav class="navigation">
         <ul class="ul-navigation">
           <li class="li-navigation">
@@ -23,13 +24,13 @@
               <div class="logo2">Studio</div>
             </div>
           </li>
-          <li class="li-navigation"><a class="li-link" href="#">Студія</a></li>
-          <li class="li-navigation"><a class="li-link" href="portfolio.html">Портфоліо</a></li>
-          <li class="li-navigation"><a class="li-link" href="#">Контакти</a></li>
+          <li class="li-navigation" id="li-link_active"><a class="li-link" href="#">Студія</a></li>
+          <li class="li-navigation" id="li-link_active"><a class="li-link" href="portfolio.html">Портфоліо</a></li>
+          <li class="li-navigation" id="li-link_active"><a class="li-link" href="#">Контакти</a></li>
           <li class="li-navigation"><a class="li-link" href="mailto:info@devstudio.com"><i
                 class="icon-envelope-hover"></i>info@devstudio.com</a></li>
-          <li class="li-navigation"><a class="li-link" id="phone" href="tel:+380961111111"><i class="icon-smartphone"></i>+380 96
-              111 11 11</a></li>
+          <li class="li-navigation"><a class="li-link" id="phone" href="tel:+380961111111"><i
+                class="icon-smartphone"></i>+380 96 111 11 11</a></li>
         </ul>
       </nav>
     </div>
@@ -39,7 +40,49 @@
   <section class="section1">
     <div class="container">
       <h1 class="title" id="main">ЕФЕКТИВНЕ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-      <center><button type="button" class="button">Замовити послугу</button></center>
+      <center><button type="button" class="button open-button" data-modal-open>Замовити послугу</button></center>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="btn" data-modal-close></button>
+          <form action="" class="form">
+            <h1 class="form-title">Залиште свої данні, ми вам передзвонимо</h1>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Ім'я</h6>
+              
+              <label class="form-input_holder">
+                <i class="icon-Vector"></i>
+                <input class="form-input form-input-one" type="text" name="name" minlength="3" required
+                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$">
+              </label>
+            </div>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Телефон</h6>
+              <label class="form-input_holder">
+                <i class="icon-Vector-1"></i>
+                <input class="form-input form-input-two" type="tel" name="tel" required min="10" max="20">
+              </label>
+            </div>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Пошта</h6>
+              <label class="form-input_holder">
+                <i class="icon-Vector-2"></i>
+                <input class="form-input form-input-three" type="email" name="email" required>
+              </label>
+            </div>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Коментар</h6>
+              
+              <textarea class="form-input " name="message" id="" cols="30" rows="10" placeholder="Введіть текст" required
+                minlength="20"></textarea>
+            </div>
+            <div class="terms-holder">
+              <input class="checkbox" type="checkbox">
+              <p>Погоджуюся з розсилкою та приймаю <a class="terms" href="#">Умови договору</a></p>
+            </div>
+            <button class="form-btn" type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -241,10 +284,22 @@
             <li class="li-socials"><a href="" class="a-socials"><i class="icon-linkedin-1"></i></a></li>
           </ul>
         </li>
+        <li>
+          <h6 class="foot-h6">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h6>
+          <div class="footer-form-wrap">
+            <label class="footer-form-input_holder">
+              <input class="footer-form-input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <button class="subscribe" type="button">Підписатися</button>
+          </div>
+        </li>
       </ul>
     </div>
   </footer>
   </div>
+
+  <script src="./js/main.js"></script>
+
 </body>
 
 </html>
