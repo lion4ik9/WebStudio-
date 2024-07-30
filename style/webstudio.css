@@ -72,10 +72,18 @@ body {
 }
 
 .li-link:hover {
-    color: #2196F3;
+    animation: li-link-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
+@keyframes li-link-hover {
+    0% {
+        color: black;
+    }
 
+    100% {
+        color: #2196F3;
+    }
+}
 
 #li-link_active > .li-link::after {
     content: "";
@@ -347,6 +355,7 @@ footer {
 }
 
 .info-list-foot {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 1100px;
@@ -488,9 +497,19 @@ div {
     }
     
     .section-four-link-item:hover{
-    color: #ffffff;
-    background-color: #2196F3;
-    border-radius: 50%;
+    animation: sec-four-link 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    @keyframes sec-four-link {
+        0% {
+            border-radius: 50%;
+        }
+
+        100% {
+            color: #ffffff;
+            background-color: #2196F3;
+            border-radius: 50%;
+        }
     }
     
 .regular-clients-list {
@@ -615,8 +634,17 @@ div {
     }
     
     .a-socials:hover{
-    color: #ffffff;
-    background-color: #2196F3;
+    animation: socials 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    @keyframes socials {
+        0% {
+        /* ❔ */
+        }
+
+        100% {
+            background-color: #2196F3;
+        }
     }
 
 .li-wdwd {
@@ -697,8 +725,18 @@ div {
 }
 
 .btn:hover {
-    color: #2196F3;
-    border: 1px solid #2196F3;
+    animation: btn 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes btn {
+    0% {
+
+    }
+
+    100% {
+        color: #2196F3;
+        border: 1px solid #2196F3;
+    }
 }
 
 .form-title {
@@ -839,12 +877,138 @@ textarea.form-input  {
     box-shadow: 0 4px 4px 0 #00000026;
 }
 
-.subscribe::after {
-    margin-left: 6px;
-    content: url(../images/icon/fonts/icon\ send.svg);
-    width: 20px;
-    height: 20px;
-    
+.send {
+    position: relative;
+    left: 1100px;
+    bottom: 80px;
+    background-color: #00000000;
+    border: none;
+    padding: 0;
+    overflow: visible;
+}
+
+.send:hover {
+    cursor: help;
+}
+
+.send:active {
+    animation: secret 10s 1s ease-in both;
+    border: none;
+}
+
+@keyframes secret {
+    0% {
+        top: -80px;
+        right: 0;
+        bottom: 0;
+        left: 1100px;
+    }
+
+    2% {
+        transform: scale(1.3) rotate(-40deg);
+        top: -110px;
+        right: 0;
+        bottom: 0;
+        left: 1170px;
+    }
+
+    3% {
+        transform: scale(1.7) rotate(-90deg);
+        top: -159px;
+        right: 0;
+        bottom: 0;
+        left: 1150px;
+    }
+
+    5% {
+        transform: scale(2.3) rotate(-130deg);
+        top: -174px;
+        right: 0;
+        bottom: 0;
+        left: 1120px;
+    }
+
+    8% {
+        transform: scale(2.8) rotate(-200deg);
+        top: -127px;
+        right: 0;
+        bottom: 0;
+        left: 1090px;
+    }
+
+    11% {
+        transform: scale(3.4) rotate(-270deg);
+        top: -105px;
+        right: 0;
+        bottom: 0;
+        left: 1170px;
+    }
+
+    15% {
+        transform: scale(3.6) rotate(-320deg);
+        top: -126px;
+        right: 0;
+        bottom: 0;
+        left: 1209px;
+    }
+
+    20% {
+        transform: scale(4) rotate(-340deg);
+        top: -150px;
+        right: 0;
+        bottom: 0;
+        left: 1300px;
+        opacity: 1;
+        font-size: 20px;
+        background-image: none;
+    }
+
+    40% {
+        transform: scale(6) rotate(-430deg);
+        top: -170px;
+        right: 0;
+        bottom: 0;
+        left: 1313px;
+        opacity: 0;
+        background-image: url('/Hutcherson.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 0;
+    }
+
+    50% {
+        transform: scale(4) rotate(-500deg);
+        top: -200px;
+        right: 0;
+        bottom: 0;
+        left: 940px;
+    }
+
+    93% {
+        background-image: url('/Hutcherson.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: -200px;
+        left: 1040px;
+    }
+
+    99% {
+        background-image: url('/Hutcherson.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 0;
+        top: -200px;
+        left: 1040px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: -200px;
+        left: 1040px;
+    }
 }
 
 .footer-form-wrap {
@@ -860,3 +1024,4 @@ textarea.form-input  {
 .form-input:focus {
     outline: 1px solid #2196F3;
 }
+
