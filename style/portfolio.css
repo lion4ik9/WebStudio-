@@ -63,6 +63,17 @@ a.li-link i {
     display: flex;
     padding-bottom: 30px;
     margin-top: 12px;
+    animation: li-link 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes li-link {
+    0% {
+        color: #2196F3;
+    }
+
+    100% {
+        color: black;
+    }
 }
 
 .li-link:hover {
@@ -158,17 +169,38 @@ ul {
     padding: 7px 26px;
     overflow: hidden;
     cursor: pointer;
-}
-
-.catalog-buttons:hover {
-    animation: catalog-buttons 250ms cubic-bezier(0.4, 0, 0.2, 1) alternate both;
-}
-
-.catalog-buttons:focus {
     animation: catalog-buttons 250ms cubic-bezier(0.4, 0, 0.2, 1) alternate both;
 }
 
 @keyframes catalog-buttons {
+    0% {
+        background-color: #2196F3;
+        color: white;
+        box-shadow: 0 3px 3px 0 #00000030;
+
+    }
+
+    45% {
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+
+}
+
+
+.catalog-buttons:hover {
+    animation: catalog-buttons-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) alternate both;
+}
+
+.catalog-buttons:focus {
+    animation: catalog-buttons-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) alternate both;
+}
+
+@keyframes catalog-buttons-hover {
     0% {
         background-color: white;
         color: black;
@@ -199,15 +231,26 @@ ul {
     box-sizing: border-box;
     border: 1px solid #EEEEEE;
     flex-basis: calc((100% - 60px)/3);
-    
-}
-
-.product:hover {
     animation: box-shadow_product 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
-    box-shadow: 0 0 0 0;
 }
 
 @keyframes box-shadow_product {
+    0% {
+        box-shadow: 0px 5px 11px 0px #9d9b9b;
+    }
+    
+    100% {
+        
+    }
+
+}
+
+.product:hover {
+    animation: box-shadow_product-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    box-shadow: 0 0 0 0;
+}
+
+@keyframes box-shadow_product-hover {
     0% {
         
     }
@@ -215,7 +258,6 @@ ul {
     100% {
         box-shadow: 0px 5px 11px 0px #9d9b9b;
     }
-
 
 }
 
@@ -360,13 +402,25 @@ footer {
     border: none;
     width: 18px;
     height: 18px;
-    }
-    
-    .a-socials:hover{
-        animation: socials 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation: socials 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
     }
 
     @keyframes socials {
+        0% {
+            background-color: #2196F3;
+        
+        }
+
+        100% {
+            /* ❔ */
+        }
+    }
+
+    .a-socials:hover{
+        animation: socials-hover 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    @keyframes socials-hover {
         0% {
         /* ❔ */
         }
